@@ -25,13 +25,16 @@ To get this backEnd up and running, do the following:
 # API DOcumentation:
 
 Coffee Machines:
-| verb | path | desc |
-| ------------- | ------------- |------------- |
-| get | /getByProductType/:productType | get machines by type only |
-| get | /getByWaterline/:waterLineCompatible | get machines by water line compatibility only |
-| post | /createCoffeeMachine | create new coffee machine |
+
+| verb          | path                                 | desc                                          | 
+| ------------- | -------------                        |-------------                                  | 
+| get           | /getByProductType/:productType       | get machines by type only                     |
+| get           | /getByWaterline/:waterLineCompatible | get machines by water line compatibility only |
+| post          | /createCoffeeMachine                 | create new coffee machine                     |
+
 
 Coffee Pods:
+
 | verb | path | desc |
 | ------------- | ------------- |------------- |
 | get | /getCoffeePodsBy/type/:productType | get Pod by type only |
