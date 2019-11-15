@@ -1,0 +1,49 @@
+{
+  "name": "swenson-he-e-coffee-challenge",
+  "version": "1.0.0",
+  "description": "e-commerce coffee shop",
+  "main": "server.js",
+  "scripts": {
+    "clean": "rm -rf build && mkdir build",
+    "build-babel": "babel -d ./build ./src -s",
+    "build": "npm run clean && npm run build-babel",
+    "dev": "nodemon -w src --exec babel-node src/server.js",
+    "start": "npm run build && node ./build/server.js",
+    "test": "./node_modules/.bin/mocha --require @babel/register src/tests/*.spec.js"
+  },
+  "keywords": [
+    "node",
+    "express"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hdarwish/e-Coffee.git"
+  },
+  "dependencies": {
+    "dotenv": "^8.1.0",
+    "express": "^4.17.1",
+    "mongo": "^0.1.0",
+    "mongoose": "^5.7.1"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.2.3",
+    "@babel/core": "^7.7.2",
+    "@babel/node": "^7.7.0",
+    "@babel/plugin-proposal-class-properties": "^7.3.0",
+    "@babel/plugin-proposal-object-rest-spread": "^7.3.1",
+    "@babel/plugin-transform-runtime": "^7.6.2",
+    "@babel/preset-env": "^7.3.1",
+    "@babel/register": "^7.7.0",
+    "@babel/runtime": "^7.7.2",
+    "chai": "^4.2.0",
+    "chai-http": "^4.3.0",
+    "mocha": "^6.2.0",
+    "nodemon": "^1.19.2"
+  },
+  "author": "Hafs",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hdarwish/e-Coffee/issues"
+  },
+  "homepage": "https://github.com/hdarwish/e-Coffee#readme"
+}
