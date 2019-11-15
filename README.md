@@ -27,17 +27,17 @@ To get this backEnd up and running, do the following:
 Coffee Machines:
 | verb | path | desc |
 | ------------- | ------------- |------------- |
-| get | /getByProductType/:productType | get machines by type only
-| get | /getByWaterline/:waterLineCompatible | get machines by water line compatibility only
-| post | /createCoffeeMachine | create new coffee machine
+| get | /getByProductType/:productType | get machines by type only |
+| get | /getByWaterline/:waterLineCompatible | get machines by water line compatibility only |
+| post | /createCoffeeMachine | create new coffee machine |
 
 Coffee Pods:
 | verb | path | desc |
 | ------------- | ------------- |------------- |
-| get | /getCoffeePodsBy/type/:productType | get Pod by type only
-| get | /getCoffeePodsBy/flavor/:coffeeFlavor | get Pod by flavor only
-| get | /getCoffeePodsBy/size/:packSize | get Pod by pack size only
-| get | /getCoffeePodsBy/type/:productType/flavor/:coffeeFlavor | get Pod by type and flavor only
+| get | /getCoffeePodsBy/type/:productType | get Pod by type only |
+| get | /getCoffeePodsBy/flavor/:coffeeFlavor | get Pod by flavor only |
+| get | /getCoffeePodsBy/size/:packSize | get Pod by pack size only |
+| get | /getCoffeePodsBy/type/:productType/flavor/:coffeeFlavor | get Pod by type and flavor only |
 
 # Running Tests
 
